@@ -1,3 +1,28 @@
 import { Routes } from '@angular/router';
+import { CarritoComponent } from './pages/carrito/carrito.component';
+import { RubroComponent } from './pages/rubro/rubro.component';
+import { ArticuloComponent } from './pages/articulo/articulo.component';
+import { PerfilComponent } from './pages/perfil/perfil.component';
+import { BuscarComponent } from './pages/buscar/buscar.component';
+import { HomeComponent } from './pages/home/home.component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+    {path:"carrito",
+component:CarritoComponent
+},
+{path:"rubro",
+component:RubroComponent
+},
+{path:"articulo",
+component:ArticuloComponent
+},
+{path:"perfil",
+component:PerfilComponent
+},
+{path:"buscar",
+component:BuscarComponent
+},
+{path:"",
+component:HomeComponent
+}
+];
