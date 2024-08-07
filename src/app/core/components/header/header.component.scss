@@ -32,6 +32,7 @@ h1{
     font-size: x-large;
     font-weight: 800;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .extendido{
@@ -48,8 +49,7 @@ animation-direction: reverse;
     animation-fill-mode: forwards;
 }
 
-.fondo-imagen{
-}
+
 @keyframes fade-out {
     100%{
         opacity: 0%;

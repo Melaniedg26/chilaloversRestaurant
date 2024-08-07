@@ -13,7 +13,7 @@ component:CarritoComponent
 {path:"categoria/:id",
 component:RubroComponent
 },
-{path:"articulo",
+{path:"articulo/:id",
 component:ArticuloComponent
 },
 {path:"perfil",
