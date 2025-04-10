@@ -1,20 +1,56 @@
-<p>carrito works!</p>
-<div id="tarjetas-container">
+<div id="tarjetas-container" class="margen-chico">
     <div *ngFor="let producto of cartService.carrito, index as i "class="tarjeta-producto-container">
        <ng-container *ngIf="productosCarrito[i]">
-        <div id="izq" [ngStyle]="{'background-image': 'url('+productosCarrito[i].fotoUrl+')'}"></div>
-        <div id="cen">
+        <div id="izq" [ngStyle]="{'background-image': 'url('+productosCarrito[i].fotoUrl+')'}">
+       <div>
+        <img *ngIf="productosCarrito[i].esVegano" src="./../../../assets/icons/846457.png" alt="Apto vegano">
+       <img *ngIf="productosCarrito[i].esCeliaco" src="./../../../assets/icons/celiaco.png" alt="Apto celiaco">
+    </div> 
+</div>
+       <div id="cen">
             <p class="negrita">{{productosCarrito[i].nombre}} </p>
             <p *ngIf="producto.notas!==''">{{producto.notas}}</p>
             <app-contador-cantidad [cantidadInicial]="producto.cantidad"
-                (cantidadCambiada)="cartService.cambiarCantidadProducto(producto.idProducto,$event)"></app-contador-cantidad>
+                (cantidadCambiada)="cambiarCantidadProducto(producto.idProducto,$event)"></app-contador-cantidad>
             </div>
         <div id="der">
-            <button id="borrar" (click)="eliminarProducto(producto.idProducto)" style="width: 90%;">
-                <img src="./../../../assets/icons/borrar.png" alt="eliminar" style="width: inherit;">
+            <button id="borrar" (click)="eliminarProducto(producto.idProducto)" >
+                <img src="./../../../assets/icons/borrar.png" alt="">
             </button>
             <p class="negrita">${{productosCarrito[i].precio}}</p>
         </div>
        </ng-container>
     </div>
 </div>
+<div class="flex-center">
+<a id="mas" [routerLink]="['/']" routerLinkActive="router-link-active">+</a>
+</div>
+<section class="margen-chico" id="informacion">
+    <h3>Direccion de envio</h3>
+    <div class="flex-apart" id="envios-container">
+        <div>
+        <h4>Calle falsa 123</h4>
+        <p>San lorenzo, Santa fe, 20000</p>
+    </div>
+    <div>
+        <a [routerLink]="['/perfil']" routerLinkActive="router-link-active">
+        <img src="./../../../assets/icons/lapiz.png" alt="Editar">
+    </a>
+    </div>
+</div>
+<div id="totales" class="flex-apart">
+    <div>
+<p class="negrita">Subtotal</p>
+<p>Delivery</p>
+<p class="negrita">Total</p>
+    </div>
+    <div id="montos">
+        <p class="negrita">$<span>{{subtotal}}</span></p>
+        <p>$<span>{{delivery}}</span></p>
+        <p class="negrita">$<span>{{total}}</span></p>
+    </div>
+</div>
+<div>
+<button id="enviar">Enviar mensaje</button>
+</div>
+</section>
