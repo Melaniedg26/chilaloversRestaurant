@@ -29,8 +29,14 @@
     <h3>Direccion de envio</h3>
     <div class="flex-apart" id="envios-container">
         <div>
-        <h4>Calle falsa 123</h4>
-        <p>San lorenzo, Santa fe, 20000</p>
+        <ng-container *ngIf="perfilService.perfil(), else sinDatosEnvio">
+        <h4>{{perfilService.perfil()!.nombre}}</h4>
+        <p>{{perfilService.perfil()!.direccion}} - {{perfilService.perfil()?.telefono}}</p>
+        <p>{{perfilService.perfil()!.detalleEntrega}}</p>
+        </ng-container>
+        <ng-template #sinDatosEnvio>
+<p>Ingresa tus datos de envio</p>
+        </ng-template>
     </div>
     <div>
         <a [routerLink]="['/perfil']" routerLinkActive="router-link-active">

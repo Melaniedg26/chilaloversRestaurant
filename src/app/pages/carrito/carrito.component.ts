@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { Producto } from '../../core/interfaces/productos';
 import { ProductosService } from '../../core/services/productos.service';
 import { RouterModule } from '@angular/router';
+import { PerfilService } from '../../core/services/perfil.service';
 
 @Component({
   selector: 'app-carrito',
@@ -20,6 +21,7 @@ export class CarritoComponent {
   headerService = inject(HeaderService);
   cartService = inject(CartService);
   productosServide = inject(ProductosService);
+  perfilService=inject(PerfilService);
 
   productosCarrito: Producto[] = [];
 
