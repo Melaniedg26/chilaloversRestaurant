@@ -30,6 +30,8 @@ export class ProductosService {
 async getById(id:number):Promise<Producto|undefined>{
 const productos=await this.getAll();
 const productoElegido=productos.find(producto=>producto.id===id);
+//si hay un producto elegido devuelve el producto sino undefined,
+//es crear un if en una sola linea
 return productoElegido?productoElegido:undefined;
 
 }
