@@ -52,4 +52,9 @@ export class CartService {
       localStorage.setItem("cart", JSON.stringify(this.carrito));
     }
   }
+
+  vaciar(){
+    this.carrito=[];
+    localStorage.clear();
+  }
 }
