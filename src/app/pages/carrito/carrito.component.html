@@ -1,6 +1,20 @@
 <p>carrito works!</p>
-<div *ngFor="let producto of cartService.carrito">
-    <p>Producto: {{producto.idProducto}} <button (click)="eliminarProducto(producto.idProducto)">X</button></p>
-    <app-contador-cantidad [cantidadInicial]="producto.cantidad" (cantidadCambiada)="cartService.cambiarCantidadProducto(producto.idProducto,$event)"></app-contador-cantidad>
-    <p *ngIf="producto.notas!==''">{{producto.notas}}</p>
+<div id="tarjetas-container">
+    <div *ngFor="let producto of cartService.carrito, index as i "class="tarjeta-producto-container">
+       <ng-container *ngIf="productosCarrito[i]">
+        <div id="izq" [ngStyle]="{'background-image': 'url('+productosCarrito[i].fotoUrl+')'}"></div>
+        <div id="cen">
+            <p class="negrita">{{productosCarrito[i].nombre}} </p>
+            <p *ngIf="producto.notas!==''">{{producto.notas}}</p>
+            <app-contador-cantidad [cantidadInicial]="producto.cantidad"
+                (cantidadCambiada)="cartService.cambiarCantidadProducto(producto.idProducto,$event)"></app-contador-cantidad>
+            </div>
+        <div id="der">
+            <button id="borrar" (click)="eliminarProducto(producto.idProducto)" style="width: 90%;">
+                <img src="./../../../assets/icons/borrar.png" alt="eliminar" style="width: inherit;">
+            </button>
+            <p class="negrita">${{productosCarrito[i].precio}}</p>
+        </div>
+       </ng-container>
+    </div>
 </div>

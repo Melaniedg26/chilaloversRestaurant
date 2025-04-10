@@ -6,11 +6,12 @@ import { Producto } from '../../core/interfaces/productos';
 import { TarjetaProductoComponent } from '../../core/components/tarjeta-producto/tarjeta-producto.component';
 import { CommonModule } from '@angular/common';
 import { CategoriasService } from '../../core/services/categorias.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-rubro',
   standalone: true,
-  imports: [TarjetaProductoComponent,CommonModule,RouterModule],
+  imports: [TarjetaProductoComponent,CommonModule,RouterModule,HttpClientModule],
   templateUrl: './rubro.component.html',
   styleUrl: './rubro.component.scss'
 })

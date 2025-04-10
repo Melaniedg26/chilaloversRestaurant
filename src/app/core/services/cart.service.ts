@@ -1,48 +1,55 @@
 import { Injectable } from '@angular/core';
 import { Cart } from '../interfaces/carrito';
+import { isBrowser } from '../utils/enviroment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
+  carrito: Cart[] = [];
 
-  constructor() { 
-    const cart = localStorage.getItem("cart");
-    if(cart){
-      this.carrito=JSON.parse(cart);
+  constructor() {
+    if (isBrowser()) {
+      const cart = localStorage.getItem("cart");
+      if (cart) {
+        this.carrito = JSON.parse(cart);
+      }
     }
   }
 
-  carrito : Cart[] = []
-
-  agregarProducto(idProducto:number,cantidad:number,notas:string){
-    const i= this.carrito.findIndex(producto=>producto.idProducto===idProducto);
-    if(i===-1){
-      const nuevoProducto:Cart={idProducto:idProducto,cantidad:cantidad,notas:notas};
+  agregarProducto(idProducto: number, cantidad: number, notas: string) {
+    const i = this.carrito.findIndex(producto => producto.idProducto === idProducto);
+    if (i === -1) {
+      const nuevoProducto: Cart = { idProducto, cantidad, notas };
       this.carrito.push(nuevoProducto);
-    }else{
-      this.carrito[i].cantidad+=cantidad;
+    } else {
+      this.carrito[i].cantidad += cantidad;
     }
     this.actualizarAlmacenamiento();
   }
 
-  eliminarProducto(idProducto:number){
-    this.carrito=this.carrito.filter(producto=>producto.idProducto!==idProducto);
-    if(this.carrito.length===0)return localStorage.clear();
+  eliminarProducto(idProducto: number) {
+    this.carrito = this.carrito.filter(producto => producto.idProducto !== idProducto);
+    if (isBrowser()) {
+      if (this.carrito.length === 0) {
+        localStorage.removeItem("cart");
+      } else {
+        this.actualizarAlmacenamiento();
+      }
+    }
+  }
+
+  cambiarCantidadProducto(idProducto: number, cantidad: number) {
+    this.carrito = this.carrito.map(producto => {
+      if (producto.idProducto === idProducto) producto.cantidad = cantidad;
+      return producto;
+    });
     this.actualizarAlmacenamiento();
-
   }
 
-  cambiarCantidadProducto(idProducto:number,cantidad:number){
-  this.carrito=this.carrito.map(producto=>{
-    const productoActual=producto;
-    if(producto.idProducto===idProducto) producto.cantidad=cantidad;
-    return productoActual;
-  })
-  this.actualizarAlmacenamiento();
-  }
-
-  actualizarAlmacenamiento(){
-    localStorage.setItem("cart", JSON.stringify(this.carrito));
+  actualizarAlmacenamiento() {
+    if (isBrowser()) {
+      localStorage.setItem("cart", JSON.stringify(this.carrito));
+    }
   }
 }

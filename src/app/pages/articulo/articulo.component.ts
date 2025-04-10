@@ -7,11 +7,12 @@ import { CommonModule } from '@angular/common';
 import { ContadorCantidadComponent } from "../../core/components/contador-cantidad/contador-cantidad.component";
 import { CartService } from '../../core/services/cart.service';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-articulo',
   standalone: true,
-  imports: [CommonModule, ContadorCantidadComponent,FormsModule],
+  imports: [CommonModule, ContadorCantidadComponent,FormsModule,HttpClientModule],
   templateUrl: './articulo.component.html',
   styleUrl: './articulo.component.scss'
 })

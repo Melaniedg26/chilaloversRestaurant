@@ -1,10 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { HeaderService } from '../../core/services/header.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-perfil',
   standalone: true,
-  imports: [],
+  imports: [HttpClientModule],
   templateUrl: './perfil.component.html',
   styleUrl: './perfil.component.css'
 })

@@ -5,11 +5,12 @@ import { Categoria } from '../../core/interfaces/categorias';
 import { TarjetaCategoriaComponent } from '../../core/components/tarjeta-categoria/tarjeta-categoria.component';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [TarjetaCategoriaComponent,CommonModule,RouterModule],
+  imports: [TarjetaCategoriaComponent,CommonModule,RouterModule,HttpClientModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
