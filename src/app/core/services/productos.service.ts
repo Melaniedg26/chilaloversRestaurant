@@ -40,8 +40,8 @@ export class ProductosService {
   async buscar(parametros: Busqueda) {
     const productos = await this.getAll();
     const productosFiltrados = productos.filter(producto => {
-      if (parametros.aptoCeliaco && !producto.esFit) return false;
-      if (parametros.aptoVegano && !producto.esPicante) return false;
+      if (parametros.aptoFit && !producto.esFit) return false;
+      if (parametros.aptoPicante && !producto.esPicante) return false;
       const busquedaTitulo = producto.nombre.toLowerCase().includes(parametros.texto.toLowerCase());
       if (busquedaTitulo) return true;
       for (let i = 0; i < producto.ingredientes.length; i++) {
