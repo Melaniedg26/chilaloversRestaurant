@@ -29,8 +29,8 @@ this.productosService.getAll().then(res=>this.productos.set(res));
 
 parametrosBusqueda:Busqueda={
   texto:"",
-  aptoCeliaco:false,
-  aptoVegano:false,
+  aptoFit:false,
+  aptoPicante:false,
 }
 
 async buscar(){
