@@ -7,7 +7,7 @@ import { Categoria } from '../../interfaces/categorias';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './tarjeta-categoria.component.html',
-  styleUrl: './tarjeta-categoria.component.css',
+  styleUrl: './tarjeta-categoria.component.scss',
   
 })
 export class TarjetaCategoriaComponent {

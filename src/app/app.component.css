@@ -1,3 +1,13 @@
+#container{
+    height: 100svh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
 app-tabs{
     margin-top: auto;
+}
+main{
+    flex: 1;
+    overflow-y: scroll;
 }

@@ -35,11 +35,16 @@ ul li{
 }
 textarea{
     display: block;
-    border-radius: 20px;
+    border-radius: variables.$border-radius-grande;
     border: unset;
     background-color: variables.$color-principal-claro;
-    width: 100%;
     margin-top: 10px;
+    resize: vertical;
+    width: calc(100% - 30px);
+    padding: 15px;
+    &:focus{
+        outline: none;
+    }
 }
 #cantidad-container{
     display: flex;
@@ -48,7 +53,7 @@ textarea{
 }
 button{
     width: 100%;
-    border-radius: 20px;
+    border-radius: variables.$border-radius-grande;
     border: unset;
     background-color: variables.$color-principal-claro;
     font-size: larger;

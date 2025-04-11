@@ -1,3 +1,4 @@
+<section>
 <form #formulario="ngForm" class="margen-chico" (ngSubmit)="guardarDatosPerfil()">
     <div>
         <label for="nombre">Nombre</label>
@@ -11,7 +12,7 @@
 
     </div>
     <div>
-        <label for="detalleEntrega">Detalle Entregs</label>
+        <label for="detalleEntrega">Detalle Entrega</label>
         <input type="text" name="detalleEntrega" id="detalleEntrega" [(ngModel)]="perfil.detalleEntrega">
     </div>
     <div>
@@ -21,3 +22,4 @@
     </div>
     <button [disabled]="formulario.invalid">Guardar</button>
 </form>
+</section>

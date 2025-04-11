@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Cart } from '../interfaces/carrito';
 import { isBrowser } from '../utils/enviroment';
+import { ConfigService } from './config.service';
 
 @Injectable({
   providedIn: 'root'
@@ -8,11 +9,20 @@ import { isBrowser } from '../utils/enviroment';
 export class CartService {
   carrito: Cart[] = [];
 
-  constructor() {
+  constructor(private config:ConfigService) {
     if (isBrowser()) {
       const cart = localStorage.getItem("cart");
       if (cart) {
-        this.carrito = JSON.parse(cart);
+        const carritoGuardado=JSON.parse(cart);
+        if(carritoGuardado){
+          const fechaGuardado=new Date(carritoGuardado.fecha);
+          const fecha=new Date();
+          if(fecha.getTime()- fechaGuardado.getTime()>1000*60*60*24*this.config.configuracion().diasVencimientoCarrito){
+            this.vaciar();
+          }else{
+            this.carrito=carritoGuardado.productos;
+          }
+        }
       }
     }
   }
@@ -48,13 +58,18 @@ export class CartService {
   }
 
   actualizarAlmacenamiento() {
+    const fecha=new Date();
+    const elementoAGuardar={
+      fecha,
+      productos:this.carrito
+    }
     if (isBrowser()) {
-      localStorage.setItem("cart", JSON.stringify(this.carrito));
+      localStorage.setItem("cart", JSON.stringify(elementoAGuardar));
     }
   }
 
   vaciar(){
     this.carrito=[];
-    localStorage.clear();
+    localStorage.removeItem("cart");
   }
 }
