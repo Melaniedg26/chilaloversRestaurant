@@ -2,7 +2,7 @@
 #container{
     display:flex;
     justify-content: space-around;
-    background-color:#e5e5e5;
+    background-color:variables.$color-principal;
     border-radius: variables.$border-radius-chico variables.$border-radius-chico 0 0;
     overflow: hidden;
     height: 80px;
@@ -22,5 +22,5 @@ transition: 200ms ease-in-out;
 
 
 .seleccionado{
-    background-color: variables.$color-principal;
+    background-color: variables.$color-principal-claro;
 }

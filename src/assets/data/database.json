@@ -1,93 +1,500 @@
 [
   {
     "id": 1,
-    "nombre": "Pizzas",
-    "fotoUrl": "https://www.laespanolaaceites.com/wp-content/uploads/2019/06/pizza-con-chorizo-jamon-y-queso-1080x671.jpg",
-    "productos": []
-  },
-  {
-    "id": 2,
-    "nombre": "Hamburguesas",
-    "fotoUrl": "https://img.freepik.com/vector-gratis/hamburguesa-realista-sobre-fondo-pizarra_79603-1042.jpg?w=2000",
+    "nombre": "Entradas",
+    "fotoUrl": "https://i.blogs.es/cc7835/guacamole/1366_2000.jpg",
     "productos": [
       {
         "id": "1",
-        "nombre":"Hamburguesa con queso",
-        "precio": 120,
-        "esVegano":false,
-        "esCeliaco":false,
-        "ingredientes": ["Carne de ternera","Pan Brioche","Queso"],
-        "fotoUrl": "https://quem.com.ar/tienda/wp-content/uploads/2020/12/Grandwich_17-10_-061.jpg"
+        "nombre": "Guacamole con totopos",
+        "precio": 80,
+        "esFit": true,
+        "esPicante": false,
+        "ingredientes": [
+          "Aguacate",
+          "Tomate",
+          "Cebolla,Cilantro,Limon,Totopos"
+        ],
+        "fotoUrl": "https://cocina-casera.com/mx/wp-content/uploads/2017/09/guacamole-salsa-mexicana-y-totopos.jpg"
       },
       {
         "id": "2",
-        "nombre":"Hamburguesa especial",
-        "precio": 180,
-        "esVegano":false,
-        "esCeliaco":false,
-        "ingredientes": ["Carne de ternera","Pan Brioche","Queso", "Tomate", "Lechuga"],
-        "fotoUrl": "https://img2.elyerromenu.com/images/snack-bar-i-love-you/hamburguesas-especial/img.webp"
+        "nombre": "Tamales",
+        "precio": 30,
+        "esFit": false,
+        "esPicante": true,
+        "ingredientes": [
+          "Rajas con queso",
+          "Chicharron salsa verde",
+          "Elote dulce, piña, carne"
+        ],
+        "fotoUrl": "https://images.getrecipekit.com/20221222000427-221004mas_shot_04_0207-20recipe.jpg?aspect_ratio=1:1&quality=90&"
       },
       {
         "id": "3",
-        "nombre":"Hamburguesa vegana",
-        "precio": 150,
-        "esVegano":true,
-        "esCeliaco":false,
-        "ingredientes": ["Medallón a base de lentejas","Pan Brioche","Tomate"],
-        "fotoUrl": "https://www.pequerecetas.com/wp-content/uploads/2009/04/hamburguesa-de-garbanzos-casera-receta.jpg"
+        "nombre": "Nopales asados con panela",
+        "precio": 70,
+        "esFit": true,
+        "esPicante": false,
+        "ingredientes": [
+          "Nopal asado, panela"
+        ],
+        "fotoUrl": "https://storage.googleapis.com/avena-recipes-v2/2019/10/1571781760763.jpeg"
       },
       {
         "id": "4",
-        "nombre":"Hamburguesa celíaca",
-        "precio": 190,
-        "esVegano":false,
-        "esCeliaco":true,
-        "ingredientes": ["Carne de ternera","Pan libre de tacc","Queso"],
-        "fotoUrl": "https://www.perez-h.com/newsite/wp-content/uploads/2016/06/queso-2.jpg"
-      },
+        "nombre": "Totopos con salsa macha",
+        "precio": 90,
+        "esFit": false,
+        "esPicante": true,
+        "ingredientes": [
+          "Totopos de maiz, salsa macha"
+        ],
+        "fotoUrl": "https://images.seattletimes.com/wp-content/uploads/2018/12/327df6de-0030-11e9-9984-4f8c2bf6f149.jpg?d=1020x680"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Chilaquiles",
+    "fotoUrl": "https://patijinich.com/wp-content/uploads/2012/10/04_GreenChilaquilesRoastedTomatilloSauce_101_Cropped-copy.jpg",
+    "productos": [
       {
         "id": "5",
-        "nombre":"Hamburguesa americana",
-        "precio": 155,
-        "esVegano":false,
-        "esCeliaco":false,
-        "ingredientes": ["Carne de ternera","Pan Brioche","Queso","Salsa secreta BBQ", "Panceta"],
-        "fotoUrl": "https://www.clarin.com/img/2022/05/27/0HXb0UR0v_2000x1500__1.jpg"
+        "nombre": "Chilaquiles Rojos",
+        "precio": 110,
+        "esFit": false,
+        "esPicante": false,
+        "ingredientes": [
+          "Totopos de maiz, salsa roja, crema, queso cotija, aguacate, acompañado de frijoles"
+        ],
+        "fotoUrl": "https://www.lamichoacanameatmarket.com/wp-content/uploads/2019/03/Chilaquiles-Rojos.jpg"
       },
       {
         "id": "6",
-        "nombre":"Medallón platero",
-        "precio": 200,
-        "esVegano":true,
-        "esCeliaco":true,
-        "ingredientes": ["Medallón a base de lentejas","Tomate","Lechuga"],
-        "fotoUrl": "https://canalcocina.es/medias/images/1010_Coc_RecetasDeAnnie_HamburguesaQueso.jpg"
+        "nombre": "Chilaquiles verdes",
+        "precio": 110,
+        "esFit": false,
+        "esPicante": false,
+        "ingredientes": [
+          "Totopos de maiz, salsa verde, crema, queso cotija, aguacate, acompañado de frijoles"
+        ],
+        "fotoUrl": "https://1.bp.blogspot.com/-klGxlfS5aKo/XU5cjVzjD2I/AAAAAAAAASc/vmMPq06dFoI-TNCT0MZUwnfEKc8WtCHvgCEwYBhgL/s1600/01_Chilaquiles_verdes_con_frijoles_chinos.jpg"
+      },
+      {
+        "id": "7",
+        "nombre": "Chilaquiles divorciados",
+        "precio": 110,
+        "esVegano": false,
+        "esCeliaco": false,
+        "ingredientes": [
+          "Totopos de maiz, salsa verde y roja, crema, queso cotija, aguacate, acompañado de frijoles"
+        ],
+        "fotoUrl": "https://mojo.generalmills.com/api/public/content/BlrM6o6AeEishZHZTwYF2A_gmi_hi_res_jpeg.jpeg?v=d910644f&t=16e3ce250f244648bef28c5949fb99ff"
+      },
+      {
+        "id": "8",
+        "nombre": "Chilaquiles rojos con habanero",
+        "precio": 120,
+        "esFit": false,
+        "esPicante": true,
+        "ingredientes": [
+          "Totopos de maiz, salsa roja con ha, crema, queso cotija, aguacate, acompañado de frijoles"
+        ],
+        "fotoUrl": "https://tse1.mm.bing.net/th?id=OIP.CYatYg58qa0D-H3lRhrluAHaE8&pid=Api&P=0&h=180"
+      },
+      {
+        "id": "9",
+        "nombre": "Chilaquiles verdes con habanero",
+        "precio": 120,
+        "esFit": false,
+        "esPicante": true,
+        "ingredientes": [
+          "Totopos de maiz, salsa verde, crema, queso cotija, aguacate, acompañado de frijoles"
+        ],
+        "fotoUrl": "https://tse1.mm.bing.net/th?id=OIP.lUel7SzwLsCRWlwdI3I0kAHaE8&pid=Api&P=0&h=180"
+      },
+      {
+        "id": "10",
+        "nombre": "Chilaquiles FIt",
+        "precio": 140,
+        "esFit": true,
+        "esPicante": false,
+        "ingredientes": [
+          "Totopos tradicionales horneados en salsa a elegir"
+        ],
+        "fotoUrl": "https://static.wixstatic.com/media/f31917_60645e4aff01420da64de1f39cf32320~mv2.jpg/v1/fit/w_1000%2Ch_1000%2Cal_c%2Cq_80/file.jpg"
       }
     ]
   },
   {
     "id": 3,
     "nombre": "Postres",
-    "fotoUrl": "https://www.recetasnestle.com.ar/sites/default/files/2023-03/postre-en-vaso-dulce-leche.jpg.jpg",
-    "productos": []
+    "fotoUrl": "https://i.ytimg.com/vi/wddE9VHOu1Q/maxresdefault.jpg",
+    "productos": [
+      {
+        "id": "11",
+        "nombre": "Hotcakes con fruta",
+        "precio": 75,
+        "esFit": false,
+        "esPicante": false,
+        "ingredientes": [
+          "Hotcakes esponjosos, miel de maple, plátano, fresa, arándanos, espolvoreados con azúcar glass"
+        ],
+        "fotoUrl": "https://dgari.com/wp-content/uploads/2021/03/Foto-08.jpg"
+      },
+      {
+        "id": "12",
+        "nombre": "Chocoflan",
+        "precio": 40,
+        "esFit": false,
+        "esPicante": false,
+        "ingredientes": [
+          "Bizcocho de chocolate, flan de vainilla, caramelo líquido"
+        ],
+        "fotoUrl": "https://i.pinimg.com/originals/b4/37/f0/b437f0a352c874f81201eba321be1940.jpg"
+      },
+      {
+        "id": "13",
+        "nombre": "Carlota de limón",
+        "precio": 35,
+        "esFit": false,
+        "esPicante": false,
+        "ingredientes": [
+          "Galletas María, crema de limón, leche condensada, ralladura de limón"
+        ],
+        "fotoUrl": "https://tse3.mm.bing.net/th?id=OIP.1op8mtqC6-9gL4tW9uqC8AHaE8&pid=Api&P=0&h=180"
+      },
+      {
+        "id": "14",
+        "nombre": "Pay de queso",
+        "precio": 40,
+        "esFit": false,
+        "esPicante": false,
+        "ingredientes": [
+          "Base de galleta, relleno cremoso de queso crema, mermelada de frutos rojos"
+        ],
+        "fotoUrl": "https://mandolina.co/wp-content/uploads/2020/10/Rebanada-de-tarta-de-queso.jpg"
+      },
+      {
+        "id": "15",
+        "nombre": "Flan casero",
+        "precio": 35,
+        "esFit": false,
+        "esPicante": false,
+        "ingredientes": [
+          "Flan de huevo, vainilla natural, caramelo líquido"
+        ],
+        "fotoUrl": "https://cafedelaflor.com/images/productos/202303231342319.jpg"
+      },
+      {
+        "id": "16",
+        "nombre": "Nieve con toppings",
+        "precio": 40,
+        "esFit": false,
+        "esPicante": false,
+        "ingredientes": [
+          "Nieve artesanal de vainilla o chocolate, toppings a elegir: chispas, galleta, frutas, jarabe de chocolate"
+        ],
+        "fotoUrl": "https://tse1.mm.bing.net/th?id=OIP.pR19-z3MRDzHPifF7mkLUwHaFj&pid=Api&P=0&h=180"
+      },
+      {
+        "id": "17",
+        "nombre": "Hotcakes de avena con fruta",
+        "precio": 60,
+        "esFit": true,
+        "esPicante": false,
+        "ingredientes": [
+          "Harina de avena, claras de huevo, plátano, canela, servidos con fresas, plátano y miel de agave"
+        ],
+        "fotoUrl": "http://cdn2.cocinadelirante.com/sites/default/files/images/2017/05/hotcakeslight.jpg"
+      },
+      {
+        "id": "18",
+        "nombre": "Volteado de piña fit",
+        "precio": 70,
+        "esFit": true,
+        "esPicante": false,
+        "ingredientes": ["Rodajas de piña natural, harina de avena, huevo, endulzado con stevia, aceite de coco, toque de canela"],
+        "fotoUrl": "https://buenprovecho.hn/wp-content/uploads/2020/07/Volteado-de-pi%C3%B1a-1.png"
+      },
+      {
+        "id": "19",
+        "nombre": "Nieve natural de coco",
+        "precio": 65,
+        "esFit": true,
+        "esPicante": false,
+        "ingredientes": [
+          "Base de leche de coco natural, endulzada con agave, sin lácteos ni azúcar refinada"
+        ],
+        "fotoUrl": "http://i.ytimg.com/vi/kGytfOfHJ9s/maxresdefault.jpg"
+      }
+    ]
   },
   {
     "id": 4,
     "nombre": "Bebidas",
-    "fotoUrl": "https://img.band.uol.com.br/image/2023/02/09/bebidas-alcoolicas-181014_800x450.webp",
-    "productos": []
+    "fotoUrl": "https://www.recetasnestle.com.ec/sites/default/files/2021-12/tazas-con-tipos-de-cafe_1.jpg",
+    "productos": [
+      {
+        "id": "20",
+        "nombre": "Café americano",
+        "precio": 35,
+        "esFit": true,
+        "esPicante": false,
+        "ingredientes": ["Café espresso rebajado con agua caliente"],
+        "fotoUrl": "https://tse1.mm.bing.net/th?id=OIP.4uQgGStSsrsqxLl_xdwGxwHaEK&pid=Api&P=0&h=180"
+      },
+      {
+        "id": "21",
+        "nombre": "Cappuccino",
+        "precio": 45,
+        "esFit": false,
+        "esPicante": false,
+        "ingredientes": ["Café espresso, leche espumada y vaporizada"],
+        "fotoUrl": "https://tse2.mm.bing.net/th?id=OIP.-RG2SRFwqdKRI4IYRGeYiwHaFj&pid=Api&P=0&h=180"
+      },
+      {
+        "id": "22",
+        "nombre": "Moka",
+        "precio": 50,
+        "esFit": false,
+        "esPicante": false,
+        "ingredientes": ["Café espresso, leche vaporizada, jarabe de chocolate, crema batida opcional"],
+        "fotoUrl": "https://cafesolocontigo.com/wp-content/uploads/2020/01/cafe-moka-mocha-o-vienes.jpg"
+      },
+      {
+        "id": "23",
+        "nombre": "Frappé de café",
+        "precio": 55,
+        "esFit": false,
+        "esPicante": false,
+        "ingredientes": ["Hielo frappé, café, leche, endulzante, crema batida opcional"],
+        "fotoUrl": "https://tse1.mm.bing.net/th?id=OIP.fFxxYtRvLEw0k1HBL07ZEwHaJQ&pid=Api&P=0&h=180"
+      },
+      {
+        "id": "24",
+        "nombre": "Frappé de chocolate",
+        "precio": 55,
+        "esFit": false,
+        "esPicante": false,
+        "ingredientes": ["Hielo frappé, leche, jarabe de chocolate, crema batida opcional"],
+        "fotoUrl": "https://i0.wp.com/www.buenossaborespanama.com/wp-content/uploads/2020/09/2-11-1.jpg?w=626&ssl=1"
+      },
+      {
+        "id": "25",
+        "nombre": "Agua frescas",
+        "precio": 25,
+        "esFit": true,
+        "esPicante": false,
+        "ingredientes": ["Jamaica, horchata, cebada"],
+        "fotoUrl": "https://www.cardamomo.news/__export/1694803175540/sites/debate/img/2023/09/15/aguas_frescas_mexicanas.png_673822677.png"
+      },
+      {
+        "id": "26",
+        "nombre": "Agua natural",
+        "precio": 15,
+        "esFit": true,
+        "esPicante": false,
+        "ingredientes": ["Agua purificada"],
+        "fotoUrl": "https://tse4.mm.bing.net/th?id=OIP.FtOxoVf2fVhs58E6am0vdAHaE5&pid=Api&P=0&h=180"
+      },
+      {
+        "id": "27",
+        "nombre": "Smoothie verde detox",
+        "precio": 60,
+        "esFit": true,
+        "esPicante": false,
+        "ingredientes": ["Espinaca, piña, plátano, manzana verde, agua de coco, jengibre"],
+        "fotoUrl": "https://tse4.mm.bing.net/th?id=OIP.HRbKgFFxAWydf71QTGVULgHaE8&pid=Api&P=0&h=180"
+      },
+      {
+        "id": "28",
+        "nombre": "Smoothie de frutos rojos",
+        "precio": 65,
+        "esFit": true,
+        "esPicante": false,
+        "ingredientes": ["Fresas, moras, frambuesas, yogurt griego, leche de almendra, chía"],
+        "fotoUrl": "https://tse2.mm.bing.net/th?id=OIP.LDUwTW5OCwaciK322PHycgHaE8&pid=Api&P=0&h=180"
+      },
+      {
+        "id": "29",
+        "nombre": "Smoothie de avena y manzana",
+        "precio": 60,
+        "esFit": true,
+        "esPicante": false,
+        "ingredientes": ["Manzana verde, avena, canela, leche de almendra, un toque de vainilla"],
+        "fotoUrl": "https://storage.googleapis.com/avena-recipes/2019/10/1571780102708.jpeg"
+      },
+      {
+        "id": "30",
+        "nombre": "Refrescos",
+        "precio": 30,
+        "esFit": false,
+        "esPicante": false,
+        "ingredientes": ["Refrescos variados en lata o botella: Coca-Cola, Sprite, Fanta, etc."],
+        "fotoUrl": "https://tse4.mm.bing.net/th?id=OIP.M4fLEpRAxy_PmW96LdK4kAHaE8&pid=Api&P=0&h=180"
+      }
+
+    ]
   },
   {
     "id": 5,
-    "nombre": "Combos",
-    "fotoUrl": "https://i-ticketing.iwos.com/1000x1000-th/products/220/products_220_2.png",
-    "productos": []
+    "nombre": "Especiales",
+    "fotoUrl": "https://photos.tryotter.com/cdn-cgi/image/fit=crop,width=312,height=276,quality=60,format=auto/menu-photos/db6a66f8-5596-4f5f-abbf-7a3fc40dd730.jpeg",
+    "productos": [
+      {
+        "id": "31",
+        "nombre": "Chilaquiles con pollo",
+        "precio": 135,
+        "esFit": false,
+        "esPicante": false,
+        "ingredientes": ["Totopos de maíz, salsa a elegir (verde o roja), pechuga de pollo deshebrada, crema, queso cotija, cebolla morada, aguacate, frijoles refritos"],
+        "fotoUrl": "https://1.bp.blogspot.com/-QAJfH5qVttQ/XYs-QNoHuzI/AAAAAAAAVXY/Fyt1_gK7tnUfMzNEwX7eXhiQrN7-HTr5QCLcBGAsYHQ/s1600/chilaquiles_rojos_con_pollo.jpg"
+      },
+      {
+        "id": "32",
+        "nombre": "Chilaquiles con arrachera",
+        "precio": 165,
+        "esFit": false,
+        "esPicante": false,
+        "ingredientes": ["Totopos de maíz, salsa al gusto, tiras de arrachera a la parrilla, cebolla caramelizada, crema, queso, aguacate, acompañado de frijoles negros"],
+        "fotoUrl": "https://i.pinimg.com/originals/6d/3b/82/6d3b8212a4f3a225dce5293c8e3bf464.jpg"
+      },
+      {
+        "id": "33",
+        "nombre": "Chilaquiles con chorizo",
+        "precio": 140,
+        "esFit": false,
+        "esPicante": true,
+        "ingredientes": ["Totopos, salsa roja o verde, chorizo doradito, crema, queso cotija, aguacate, cebolla, frijoles de la olla o refritos"],
+        "fotoUrl": "https://mexico10.org/wp-content/uploads/2020/12/chilaquiles-chorizo-768x423.jpg"
+      },
+      {
+        "id": "34",
+        "nombre": "Chilaquiles con chilorio",
+        "precio": 150,
+        "esFit": false,
+        "esPicante": false,
+        "ingredientes": ["Totopos bañados en salsa, chilorio estilo sinaloense, cebolla morada, crema, queso rallado, rodajas de aguacate, frijoles negros"],
+        "fotoUrl": "https://blog.amigofoods.com/wp-content/uploads/2022/05/chilorio-chilaquiles-rojos-1024x683.jpg"
+      },
+      {
+        "id": "35",
+        "nombre": "Chilaquiles con huevo",
+        "precio": 125,
+        "esFit": false,
+        "esPicante": false,
+        "ingredientes": ["Totopos de maíz, salsa a elegir (verde o roja), 2 huevos al gusto (estrellados o revueltos), crema, queso fresco, cebolla, aguacate, frijoles refritos"],
+        "fotoUrl": "https://tse2.mm.bing.net/th?id=OIP.1zraSJyzgNGg8vxd2XQk4AHaEK&pid=Api&P=0&h=180"
+      },
+      {
+        "id": "36",
+        "nombre": "Chilaquiles con nopal y panela",
+        "precio": 130,
+        "esFit": true,
+        "esPicante": false,
+        "ingredientes": ["Totopos horneados, salsa a elegir, claras de huevo, queso panela, aguacate, espinaca fresca, sin crema ni frituras, acompañados de frijoles negros de olla"],
+        "fotoUrl": "https://yosoyvendedor.com/source/a0e0ce4192d17e609fac013d0fcc45c7/Chilaquiles_con_nopal.jpeg"
+      }
+    ]
   },
   {
     "id": 6,
-    "nombre": "Recomendados",
-    "fotoUrl": "https://eldiariony.com/wp-content/uploads/sites/2/2023/06/shutterstock_521741356.jpg?resize=360,270&quality=80",
-    "productos": []
+    "nombre": "Lo mas pedido",
+    "fotoUrl": "https://media-cdn.tripadvisor.com/media/photo-s/0a/7b/d0/0d/la-palapa-de-don-juan.jpg",
+    "productos": [
+      {
+        "id": "35",
+        "nombre": "Chilaquiles con huevo",
+        "precio": 125,
+        "esFit": false,
+        "esPicante": false,
+        "ingredientes": ["Totopos de maíz, salsa a elegir (verde o roja), 2 huevos al gusto (estrellados o revueltos), crema, queso fresco, cebolla, aguacate, frijoles refritos"],
+        "fotoUrl": "https://tse2.mm.bing.net/th?id=OIP.1zraSJyzgNGg8vxd2XQk4AHaEK&pid=Api&P=0&h=180"
+      },
+      {
+        "id": "31",
+        "nombre": "Chilaquiles con pollo",
+        "precio": 135,
+        "esFit": false,
+        "esPicante": false,
+        "ingredientes": ["Totopos de maíz, salsa a elegir (verde o roja), pechuga de pollo deshebrada, crema, queso cotija, cebolla morada, aguacate, frijoles refritos"],
+        "fotoUrl": "https://1.bp.blogspot.com/-QAJfH5qVttQ/XYs-QNoHuzI/AAAAAAAAVXY/Fyt1_gK7tnUfMzNEwX7eXhiQrN7-HTr5QCLcBGAsYHQ/s1600/chilaquiles_rojos_con_pollo.jpg"
+      },
+      {
+        "id": "32",
+        "nombre": "Chilaquiles con arrachera",
+        "precio": 165,
+        "esFit": false,
+        "esPicante": false,
+        "ingredientes": ["Totopos de maíz, salsa al gusto, tiras de arrachera a la parrilla, cebolla caramelizada, crema, queso, aguacate, acompañado de frijoles negros"],
+        "fotoUrl": "https://i.pinimg.com/originals/6d/3b/82/6d3b8212a4f3a225dce5293c8e3bf464.jpg"
+      },
+      {
+        "id": "27",
+        "nombre": "Smoothie verde detox",
+        "precio": 60,
+        "esFit": true,
+        "esPicante": false,
+        "ingredientes": ["Espinaca, piña, plátano, manzana verde, agua de coco, jengibre"],
+        "fotoUrl": "https://tse4.mm.bing.net/th?id=OIP.HRbKgFFxAWydf71QTGVULgHaE8&pid=Api&P=0&h=180"
+      },
+      {
+        "id": "21",
+        "nombre": "Cappuccino",
+        "precio": 45,
+        "esFit": false,
+        "esPicante": false,
+        "ingredientes": ["Café espresso, leche espumada y vaporizada"],
+        "fotoUrl": "https://tse2.mm.bing.net/th?id=OIP.-RG2SRFwqdKRI4IYRGeYiwHaFj&pid=Api&P=0&h=180"
+      },
+      {
+        "id": "1",
+        "nombre": "Guacamole con totopos",
+        "precio": 80,
+        "esFit": true,
+        "esPicante": false,
+        "ingredientes": [
+          "Aguacate",
+          "Tomate",
+          "Cebolla,Cilantro,Limon,Totopos"
+        ],
+        "fotoUrl": "https://cocina-casera.com/mx/wp-content/uploads/2017/09/guacamole-salsa-mexicana-y-totopos.jpg"
+      },
+      {
+        "id": "7",
+        "nombre": "Chilaquiles divorciados",
+        "precio": 110,
+        "esVegano": false,
+        "esCeliaco": false,
+        "ingredientes": [
+          "Totopos de maiz, salsa verde y roja, crema, queso cotija, aguacate, acompañado de frijoles"
+        ],
+        "fotoUrl": "https://mojo.generalmills.com/api/public/content/BlrM6o6AeEishZHZTwYF2A_gmi_hi_res_jpeg.jpeg?v=d910644f&t=16e3ce250f244648bef28c5949fb99ff"
+      },
+      {
+        "id": "11",
+        "nombre": "Hotcakes con fruta",
+        "precio": 75,
+        "esFit": false,
+        "esPicante": false,
+        "ingredientes": [
+          "Hotcakes esponjosos, miel de maple, plátano, fresa, arándanos, espolvoreados con azúcar glass"
+        ],
+        "fotoUrl": "https://dgari.com/wp-content/uploads/2021/03/Foto-08.jpg"
+      },
+      {
+        "id": "16",
+        "nombre": "Nieve con toppings",
+        "precio": 40,
+        "esFit": false,
+        "esPicante": false,
+        "ingredientes": [
+          "Nieve artesanal de vainilla o chocolate, toppings a elegir: chispas, galleta, frutas, jarabe de chocolate"
+        ],
+        "fotoUrl": "https://tse1.mm.bing.net/th?id=OIP.pR19-z3MRDzHPifF7mkLUwHaFj&pid=Api&P=0&h=180"
+      }
+    ]
   }
 ]

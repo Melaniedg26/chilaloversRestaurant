@@ -2,8 +2,8 @@ export interface Producto{
     id:number,
     nombre:string,
     precio:number,
-    esVegano:boolean,
-    esCeliaco:boolean,
+    esFit:boolean,
+    esPicante:boolean,
     ingredientes:string
     fotoUrl:string
 

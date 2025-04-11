@@ -5,13 +5,13 @@
         <li *ngFor="let ingrediente of producto?.ingredientes">{{ingrediente}}</li>
     </ul>
     <div>
-        <div class="apto-container" *ngIf="producto?.esCeliaco">
-            <img class="apto" src="./../../../assets/icons/celiaco.png">
-            <p>Apto para Celiaco</p>
-        </div>
-        <div class="apto-container" *ngIf="producto?.esVegano">
+        <div class="apto-container" *ngIf="producto?.esFit">
             <img class="apto" src="./../../../assets/icons/846457.png">
-            <p>Apto para Vegano</p>
+            <p>Comida Fit</p>
+        </div>
+        <div class="apto-container" *ngIf="producto?.esPicante">
+            <img class="apto" src="./../../../assets/icons/chile.png">
+            <p>Comida Picante</p>
         </div>
     </div>
     <label for="notas">Notas:</label>

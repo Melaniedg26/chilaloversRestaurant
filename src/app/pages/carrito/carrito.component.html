@@ -5,10 +5,10 @@
         <ng-container *ngIf="productosCarrito()[i]">
             <div id="izq" [ngStyle]="{'background-image': 'url('+productosCarrito()[i].fotoUrl+')'}">
                 <div>
-                    <img *ngIf="productosCarrito()[i].esVegano" src="./../../../assets/icons/846457.png"
-                        alt="Apto vegano">
-                    <img *ngIf="productosCarrito()[i].esCeliaco" src="./../../../assets/icons/celiaco.png"
-                        alt="Apto celiaco">
+                    <img *ngIf="productosCarrito()[i].esPicante" src="./../../../assets/icons/chile.png"
+                        alt="Comida Fit">
+                    <img *ngIf="productosCarrito()[i].esFit" src="./../../../assets/icons/846457.png"
+                        alt="Comida Picante">
                 </div>
             </div>
             <div id="cen">
